@@ -10,7 +10,7 @@ body{
     padding: 0;
     width: 100%;
     height: 100%;
-    background-color: hsl(216, 50%, 16%);
+    background-color: hsl(217, 54%, 11%);
 }
 
 main{
@@ -22,17 +22,66 @@ section{
     max-width: 300px;
     width: 100%;
     min-height: 55%;
-    background-color: hsl(215, 32%, 27%);
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+}
+
+section img.picture{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
 }
 
 .code{
     font-weight: 600;
     font-size: 1.125em;
     color: white;
+    transition: color 0.5s;
+}
+
+.code:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
 
 p.text{
-    color: hsla(215, 52%, 70%, 0.692);
+    color: hsl(215, 51%, 70%);
     font-size: 300;
-    font-size: 0.8rem;
+    font-size: 0.8em;
+}
+
+div.tag{
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+div.price{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    font-size: 0.75em;
+}
+
+div.time{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 0.75em;
+}
+
+.credit{
+    color: hsl(215, 51%, 70%);
+    font-size: 0.7em;
+}
+
+.credit img{
+    max-width: 27.5px;
+    border: 1px solid white;
+}
+
+.name{
+    color: white;
+    transition: color 0.5s;
+}
+
+.name:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
