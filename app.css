@@ -26,10 +26,37 @@ section{
     border-radius: 15px;
 }
 
-section img.picture{
+div.picture{
+    position: relative;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 15px;
+}
+
+section div.picture img.pic{
     width: 100%;
     height: auto;
     border-radius: 15px;
+    transition: opacity .5s ease;
+}
+
+section div.picture img:nth-of-type(2){
+    position: absolute;
+    top: 108px;
+    left: 108px;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.picture:hover{
+    cursor: pointer;
+}
+
+.picture:hover .overlay{
+    opacity: 1;
+}
+
+.picture:hover .pic{
+    opacity: 0.5;
 }
 
 .code{
@@ -69,6 +96,8 @@ div.time{
 .credit{
     color: hsl(215, 51%, 70%);
     font-size: 0.7em;
+    letter-spacing: 1.25px;
+    font-weight: 400;
 }
 
 .credit img{
@@ -79,6 +108,7 @@ div.time{
 .name{
     color: white;
     transition: color 0.5s;
+    font-weight: 600;
 }
 
 .name:hover{
